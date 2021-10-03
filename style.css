@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}    
+
+body {
+    font-family: 'Poppins' , sans-serif;
+    height: 100%;
+    background-color: #674baf;
+    background-image: url(./images/bg-desktop.svg);
+    background-position: center;
+    background-size: cover;
+    }
+
+.container {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0 -20px;
+
+}
+
+.logo {
+    text-align: left;
+    margin: 60px ;
+    margin-left: 60px;
+}
+
+.logo img{
+    height: 45px;
+    width: auto;
+}
+
+.main-section{
+  display: flex;
+  justify-content: space-between;
+  text-align: left;  
+  
+}
+
+.main-section h1{
+    width: 40%;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    margin-left: 90px;
+
+}
+
+.main-section p{
+    width: 61%;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 100;
+    margin-left: 90px;
+}
+
+.main-section .left-container{
+    margin-left: 60px;
+}
+
+.main-section .left-container img{
+    height: 410px;
+    width: 600px;
+    margin-top: 25px;
+}
+
+button {
+    padding: 12px;
+    font-size: 18px;
+    background-color: #ffffff;
+    width: 230px;
+    color: #674baf;
+    font-family: 'Poppins' , sans-serif;
+    box-shadow:  0 8px 17px -8px black;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    cursor: pointer;
+    border: 3px solid #ffffff;
+    margin-left: 90px;
+    margin-top: 25px;
+}
+
+button:hover {
+    color: #ffffff;
+    background: #e882e8;
+    border-color: #e882e8;
+}
+
+footer {
+    font-size: 25px;
+    margin: 10px 70px;
+    text-align: end;
+}
+
+.icons i {
+    color: #ffffff;
+    margin: 0 8px;
+    cursor: pointer;
+    stroke-width: 0;
+    stroke: currentColor;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.icons i:hover{
+    color: #e882e8;
+    border-color: #e882e8;
+}
+
+@media screen and (max-width: 750px){
+    body {
+        overflow: auto;
+    }
+
+    .container{
+        height: 100%;
+        background: url(./images/bg-mobile.svg);
+        background-color: #674baf;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .main-section{
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+
+    .main-section .left-container img {
+        height: 250px;
+        width: 350px;
+        margin-right: 40px;
+    }
+
+    .main-section h1 {
+        width: 60%;
+        font-size: 25px;
+        margin-left: 90px;
+    }
+
+    .main-section p {
+        font-size: 15px;
+        width: 63%;
+        margin-left: 90px;
+    }
+    
+    .logo {
+        margin: 10%;
+        margin-left: 70px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 6px;
+        width: 200px;
+        margin-left: 0;
+    }
+
+    .icons{
+        margin: 20% 0;
+        text-align: center;
+        font-size: 28px;
+    }
+
+}
+
+@media screen and (min-width: 750px) and (max-width: 1350px){
+    body{
+        overflow: auto;
+    }
+
+    .container {
+        background-color: #674baf;
+        background-image: url(./images/bg-desktop.svg);
+        background-position: center;
+        background-size: cover;
+        padding-bottom: 40px;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .main-section {
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+
+    .main-section h1 {
+        width: 80%;
+        font: 20px;
+    }
+    
+    .main-section p {
+        font-size: 15px;
+        width: 70%;
+        margin-left: 120px;
+    }
+
+    .main-section .left-container img {
+        width: 80%;
+        margin-right: 75px;
+    }
+
+    .logo {
+        margin: 60px;
+        margin-left: 90px;
+    }
+
+    .logo img {
+        height: 45px;
+        width: auto;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 12px;
+        width: 230px;
+        margin-left: 20px;
+    }
+
+    .icons {
+        margin: 10% 0;
+        text-align: center;
+        font-size: 28px;
+    }
+
+
+}
